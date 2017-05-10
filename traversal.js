@@ -1,6 +1,9 @@
 var g = {2: [4, 5, 10], 3: [9, 10, 8], 4: [2, 8], 5: [2], 9: [3], 10: [3, 2], 8: [4]};
 var visited = {};
+// temp :: set the destination node
 var dest = 3;
+
+//temp :: set the root node
 var mainroot = 2
 function levelIter(root) {
   var edges = g[root];
@@ -23,4 +26,5 @@ function levelIter(root) {
   }
 
 }
+// pass the root node of the graph, it can be any node
 levelIter(2)
